@@ -7,7 +7,8 @@ global.$ = {
     task: require('./gulp/paths/tasks.js'),
     jsFoundation: require('./gulp/paths/js.foundation.js'),
     cssFoundation: require('./gulp/paths/css.foundation.js'),
-    app: require('./gulp/paths/app.js')
+    app: require('./gulp/paths/app.js'),
+    spritesmith: require('gulp.spritesmith')
   },
   gulp: require('gulp'),
   del: require('del'),
@@ -27,6 +28,7 @@ $.gulp.task('default', $.gulp.series(
     'js:foundation',
     'js:process',
     'copy:image',
+    'copy:fonts',
     'css:foundation',
     'sprite:svg'
   ),
