@@ -1,7 +1,22 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+  - var title = 'Главная страница'
 
 block content
-  include ../common/_greating
+  section.welcome(style="background-image: url('assets/img/welcome-bg.jpg'); background-position: center; background-size: cover; height: 100vh; width: 100wh")
+    .float-square
+      include ../common/_user
+      include ../common/_socials
+      .nav-btns
+        ul.nav__items
+          li.nav__item
+            a(href="/works.html") Мои работы
+          li.nav__item
+            a(href="/about.html") Обо мне
+          li.nav__item
+            a(href="blog.html") Блог
+    .copiright © Владимир Астахов | создано с любовью в LoftSchool | 2016
+    .auth-btn Авторизоваться
+
+

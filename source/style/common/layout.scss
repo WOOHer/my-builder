@@ -1,0 +1,83 @@
+//* {
+//  box-sizing: border-box;
+//}
+
+p {
+  font-family: 'roboto';
+  font-style: medium;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'sansus';
+}
+
+h1 {
+  font-size: 63px;
+  color: $black;
+}
+
+.float-square {
+  position: absolute;
+  height: 395px;
+  background: #fff;
+  opacity: .5;
+}
+
+.user {
+  color: #fff;
+  width: 380px;
+}
+
+.user__pic {
+  background-position: center;
+  background-size: cover;
+  height: 140px;
+  width: 140px
+}
+
+.user__title {
+  display: inline;
+  @include roboto(medium);
+  font-size: 35px;
+
+  &_less {
+    font-size: 28px;
+  }
+}
+
+.user__description {
+  @include roboto(medium);
+  font-size: 16px;
+}
+
+.nav-btns {
+  height: 45px;
+  width: 100%;
+}
+
+.nav__items {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+}
+
+.nav__item {
+  display: inline-block;
+  background-color: #e7a731;
+  padding: 14px 31px;
+}
+
+ul, li, a {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-image: url('assets/img/welcome-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100wh;
+}

@@ -1,5 +1,7 @@
-body {
-  margin: 0;
-}
+// colors
+$gray: #5d5a55;
+$black: #373e42;
 
-@import 'common/greating';
+//common
+@import 'common/fonts';
+@import 'common/layout';

@@ -2,10 +2,10 @@
 
 module.exports = function () {
     $.gulp.task('sprite', function() {
-        var spriteData = $.gulp.src('source/images/*.png').pipe($.gp.spritesmith({
+        var spriteData = $.gulp.src('source/images/sprites/*.png').pipe($.gp.spritesmith({
                 imgName: 'sprite.png',
                 cssName: 'sprite.css'
         }));
-        return spriteData.pipe($.gulp.dest('build/assets/img'));
+        return spriteData.pipe($.gulp.dest('build/assets/img/sprites'));
     });
 }
