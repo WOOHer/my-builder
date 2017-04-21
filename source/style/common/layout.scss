@@ -79,7 +79,7 @@ ul, li, a {
   margin: 0;
 }
 
-.header, .welcome, .testimonials {
+.header, .welcome {
   background-position: center;
   background-size: cover;
   height: 600px;
@@ -92,4 +92,8 @@ ul, li, a {
 
 .testimonials {
   background-image: url('../img/testimonials-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 600px;
+  width: 100wh;
 }
