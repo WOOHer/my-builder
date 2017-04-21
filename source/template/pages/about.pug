@@ -4,43 +4,7 @@ block variables
   - var title = 'Обо мне'
 
 block content
-  .wrapper
-    section.top
-      .about__bg-title
-      .header
-        include ../common/_header
-      include ../common/_user
-      a(href="").down-arrow
-    section.middle
-      .middle__left
-        h1.about__title Обо мне
-        .about__content
-          img.content__pic
-          h2.content__title Кто я
-          .content__desc
-            | Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-            | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
-      .middle__right
-        .skills
-          h2.skills__title Чем я могу быть вам полезен
-          .skills__desc Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-          .skills__stats
-            .frontend
-              h3.frontend__title
-              ul.frontend__grafs
-                li.frontend__graf
-                li.frontend__graf
-                li.frontend__graf
-            .backend
-              ul.backend__grafs
-                li.backend__graf
-                li.backend__graf
-                li.backend__graf
-                li.backend__graf
-            .workflow
-              ul.workflow__grafs
-                li.workflow__graf
-                li.workflow__graf
-                li.workflow__graf
-    section.bottom
-    include ../common/_footer
+  include ../sections/_hero
+  include ../sections/_about
+  include ../sections/_map
+  include ../common/_footer

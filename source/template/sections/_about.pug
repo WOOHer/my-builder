@@ -1,0 +1,49 @@
+section.section.about
+    .about__left
+        svg.triangal.triangal_fill_white
+        h1.title.about__title_pos Обо мне
+        .about__content
+            img.about__pic
+            h2.about__title.subtitle Кто я
+            .about__desc
+                p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+    .about__right
+        svg.triangal.triangal_fill_beige
+        .skills
+            .skills__desc
+                h2.skills__title.subtitle Чем я могу быть вам полезен
+                .skills__text
+                    p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+            ul.skills__stats
+                each skill in ['Frontend']
+                    li.skills__item
+                        .skill-section
+                            .skill-section__title= skill
+                            ul.skill-section__list
+                                each skillName in ['HTML5', 'CSS3', 'JavaScript $ JQuery']
+                                    li.skills-section__item
+                                        .skill
+                                            svg.skill__circle
+                                            .skill__name= skillName
+                each skill in ['Backend']
+                    li.skills__item
+                        .skill-section
+                            .skill-section__title= skill
+                            ul.skill-section__list
+                                each skillName in ['PHP', 'MySQL', 'Node.js', 'Mongo.db']
+                                    li.skills-section__item
+                                        .skill
+                                            svg.skill__circle
+                                            .skill__name= skillName
+                each skill in ['Workflow']
+                    li.skills__item
+                        .skill-section
+                            .skill-section__title= skill
+                            ul.skill-section__list
+                                each skillName in ['Git', 'Gulp', 'Bower']
+                                    li.skills-section__item
+                                        .skill
+                                            svg.skill__circle
+                                            .skill__name= skillName
+

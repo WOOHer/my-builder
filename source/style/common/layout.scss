@@ -7,6 +7,11 @@ p {
   font-style: medium;
 }
 
+.fa {
+  font-family: 'fonta';
+  color: #000;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'sansus';
 }
@@ -74,8 +79,8 @@ ul, li, a {
   margin: 0;
 }
 
-.header {
-  background-image: url('assets/img/welcome-bg.jpg');
+.header, .welcome {
+  background-image: url('../img/welcome-bg.jpg');
   background-position: center;
   background-size: cover;
   height: 600px;
