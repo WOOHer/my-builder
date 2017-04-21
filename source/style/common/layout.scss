@@ -79,10 +79,17 @@ ul, li, a {
   margin: 0;
 }
 
-.header, .welcome {
-  background-image: url('../img/welcome-bg.jpg');
+.header, .welcome, .testimonials {
   background-position: center;
   background-size: cover;
   height: 600px;
   width: 100wh;
+}
+
+.header, .welcome {
+  background-image: url('../img/welcome-bg.jpg');
+}
+
+.testimonials {
+  background-image: url('../img/testimonials-bg.jpg');
 }
