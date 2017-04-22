@@ -20,19 +20,6 @@ $.path.task.forEach(function(taskPath) {
   require(taskPath)();
 });
 
-// $.gulp.task('pug', () => {
-//   let locals = require('./content.json');
-//
-//   $.gulp.src('source/template/pages/**/*.pug')
-//       .pipe(plumber())
-//       .pipe(pug({
-//           locals : locals,
-//           pretty : true,
-//       }))
-//       .pipe(gulp.dest('dist'))
-//       .pipe(reload({  stream : true}))
-// });
-
 $.gulp.task('default', $.gulp.series(
   'clean',
   $.gulp.parallel(

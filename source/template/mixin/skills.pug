@@ -1,0 +1,12 @@
+mixin skills(params)
+    ul.skills__stats
+        each skill in params
+            li.skills__item
+                .skill-section
+                    .skill-section__title= skill.name
+                    ul.skill-section__list
+                        each skillName in skill.skills
+                            li.skills-section__item
+                                .skill
+                                    svg.skill__circle
+                                    .skill__name= skillName

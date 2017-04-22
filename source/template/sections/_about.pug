@@ -1,3 +1,5 @@
+include ./../mixin/skills
+
 section.section.about
     .about__left
         svg.triangal.triangal_fill_white
@@ -15,35 +17,17 @@ section.section.about
                 h2.skills__title.subtitle Чем я могу быть вам полезен
                 .skills__text
                     p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-            ul.skills__stats
-                each skill in ['Frontend']
-                    li.skills__item
-                        .skill-section
-                            .skill-section__title= skill
-                            ul.skill-section__list
-                                each skillName in ['HTML5', 'CSS3', 'JavaScript $ JQuery']
-                                    li.skills-section__item
-                                        .skill
-                                            svg.skill__circle
-                                            .skill__name= skillName
-                each skill in ['Backend']
-                    li.skills__item
-                        .skill-section
-                            .skill-section__title= skill
-                            ul.skill-section__list
-                                each skillName in ['PHP', 'MySQL', 'Node.js', 'Mongo.db']
-                                    li.skills-section__item
-                                        .skill
-                                            svg.skill__circle
-                                            .skill__name= skillName
-                each skill in ['Workflow']
-                    li.skills__item
-                        .skill-section
-                            .skill-section__title= skill
-                            ul.skill-section__list
-                                each skillName in ['Git', 'Gulp', 'Bower']
-                                    li.skills-section__item
-                                        .skill
-                                            svg.skill__circle
-                                            .skill__name= skillName
+
+            +skills([{
+                'name': 'Frontend',
+                'skills': ['HTML5', 'CSS3', 'JavaScript $ JQuery']
+            },
+            {
+                'name': 'Backend',
+                'skills': ['HTML5', 'CSS3', 'JavaScript $ JQuery']
+            },
+            {
+                'name': 'Workflow',
+                'skills': ['HTML5', 'CSS3', 'JavaScript $ JQuery']
+            }])
 
