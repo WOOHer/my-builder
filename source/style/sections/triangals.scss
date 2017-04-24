@@ -1,0 +1,15 @@
+.triangal {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+
+  &_fill {
+    &_white {
+      fill: #efeee9;
+    }
+
+    &_beige {
+      fill: #eeebdf;
+    }
+  }
+}

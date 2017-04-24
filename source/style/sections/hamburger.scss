@@ -1,0 +1,31 @@
+.hamburger {
+  height: 35px;
+  width: 40px;
+  float: right;
+  margin: 26px 26px 0 0;
+}
+
+.menu__items {
+  height: 3px;
+  width: 40px;
+  background-color: #fff;
+  position: relative;
+}
+
+.menu__line {
+  &_b {
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+
+  &_c {
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+}

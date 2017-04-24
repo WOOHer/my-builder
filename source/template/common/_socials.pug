@@ -1,5 +1,17 @@
 ul.socials
-    each item in ['vk', 'gh', 'in']
-        li.socials__item
-            a(href="" class=`socials__link socials__link_${item}`)
+    li.socials__item
+        a(href="").socials__link
+            svg.social__item
+                use(xlink:href="./assets/img/sprite.svg#vk")
+    li.socials__item
+        a(href="").socials__link
+            svg.social__item
+                use(xlink:href="./assets/img/sprite.svg#github")
+    li.socials__item
+        a(href="").socials__link
+            svg.social__item
+                use(xlink:href="./assets/img/sprite.svg#in")
+    //each item in ['vk', 'gh', 'in']
+    //    li.socials__item
+    //        a(href="" class=`socials__link socials__link_${item}`)
 

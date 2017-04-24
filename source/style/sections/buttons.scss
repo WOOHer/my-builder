@@ -1,0 +1,24 @@
+//nav-btns
+.nav-btns {
+  height: 45px;
+  width: 100%;
+}
+
+.nav__items {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+}
+
+.nav__item {
+  display: inline-block;
+  background: #efab26;
+  padding: 14px 31px;
+  text-decoration: none;
+  @include roboto(medium);
+  border-right: 2px solid #fff;
+
+  &:last-child {
+    border: none;
+  }
+}

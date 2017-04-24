@@ -1,7 +1,28 @@
-// colors
+//vars
+$footerh: 147px;
+
+//colors
 $gray: #5d5a55;
 $black: #373e42;
+$orange: #cd8920;
+$yellow: #e7a731;
+$beige: #ead8b4;
+$blue: #53595d;
+$red: #e44845;
 
 //common
 @import 'common/fonts';
 @import 'common/layout';
+
+//sections
+@import 'sections/welcome';
+@import 'sections/about';
+@import 'sections/testimonials';
+@import 'sections/socials';
+@import 'sections/buttons';
+@import 'sections/user';
+@import 'sections/hero';
+@import 'sections/triangals';
+@import 'sections/skills';
+@import 'sections/title';
+@import 'sections/hamburger';

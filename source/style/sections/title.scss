@@ -1,0 +1,26 @@
+.title {
+  font-size: 63px;
+  color: $black;
+  line-height: 125px;
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  font-size: 35px;
+  color: $gray;
+  line-height: 75px;
+}
+
+.subtitle, .title {
+  margin-top: -25px;
+}
+
+.title__bg {
+  fill: $orange;
+  position: absolute;
+  left: 20px;
+  top: -45px;
+  z-index: 0;
+  opacity: .07;
+}

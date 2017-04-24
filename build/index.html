@@ -15,35 +15,66 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <section class="welcome">
-        <div class="float-square">
-          <div class="welcome__user user">
-            <div class="user__pic" style="background-image: url('assets/img/user.jpg');"></div>
-            <div class="user__title user__title_less">Олег Братухин</div>
-            <div class="user__description">Личный сайт веб-разработчика</div>
-          </div>
-          <ul class="socials">
-            <li class="socials__item"><a class="socials__link socials__link_vk" href=""></a></li>
-            <li class="socials__item"><a class="socials__link socials__link_gh" href=""></a></li>
-            <li class="socials__item"><a class="socials__link socials__link_in" href=""></a></li>
+    <section class="welcome">
+      <div class="float-square">
+        <div class="welcome__user user">
+          <div class="user__pic" style="background-image: url('assets/img/user.jpg');"></div>
+          <div class="user__title user__title_less">Олег Братухин</div>
+          <div class="user__description">Личный сайт веб-разработчика</div>
+        </div>
+        <ul class="socials">
+          <li class="socials__item"><a class="socials__link" href="">
+              <svg class="social__item">
+                <use xlink:href="./assets/img/sprite.svg#vk"></use>
+              </svg></a></li>
+          <li class="socials__item"><a class="socials__link" href="">
+              <svg class="social__item">
+                <use xlink:href="./assets/img/sprite.svg#github"></use>
+              </svg></a></li>
+          <li class="socials__item"><a class="socials__link" href="">
+              <svg class="social__item">
+                <use xlink:href="./assets/img/sprite.svg#in"></use>
+              </svg></a></li>
+          <!--each item in ['vk', 'gh', 'in']-->
+          <!--    li.socials__item-->
+          <!--        a(href="" class=`socials__link socials__link_${item}`)-->
+        </ul>
+        <div class="nav-btns">
+          <ul class="nav__items">
+            <li class="nav__item"><a href="/works.html">Мои работы</a></li>
+            <li class="nav__item"><a href="/about.html">Обо мне</a></li>
+            <li class="nav__item"><a href="blog.html">Блог</a></li>
           </ul>
-          <div class="nav-btns">
-            <ul class="nav__items">
-              <li class="nav__item"><a href="/works.html">Мои работы</a></li>
-              <li class="nav__item"><a href="/about.html">Обо мне</a></li>
-              <li class="nav__item"><a href="blog.html">Блог</a></li>
-            </ul>
+        </div>
+      </div>
+      <section class="section login">
+        <div class="float-square float-square_login">
+          <div class="login__content">
+            <h1 class="title about__title_pos"></h1>
+            <form id="login-form" action="php/action.php" method="post" enctype="multipart/form-data">
+              <label class="input-block"></label>
+              <input class="input-area" type="text" name="name" placeholder="Логин">
+              <label class="input-block"></label>
+              <input class="input-area" type="password" name="password" placeholder="Пароль">
+            </form>
           </div>
         </div>
-        <div class="copiright">© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
-        <div class="auth-btn">Авторизоваться</div>
       </section>
-    </div>
-    <footer class="footer">
-      <div class="footer__left"></div>
-      <div class="footer__middle"></div>
-      <div class="footer__right"></div>
-    </footer>
+    </section>
+    <section class="section login">
+      <div class="float-square float-square_login">
+        <div class="login__content">
+          <h1 class="title about__title_pos"></h1>
+          <form id="login-form" action="php/action.php" method="post" enctype="multipart/form-data">
+            <label class="input-block"></label>
+            <input class="input-area" type="text" name="name" placeholder="Логин">
+            <label class="input-block"></label>
+            <input class="input-area" type="password" name="password" placeholder="Пароль">
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
+    <div class="auth-btn">Авторизоваться</div>
   </body>
 </html>

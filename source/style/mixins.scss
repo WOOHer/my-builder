@@ -1,0 +1,4 @@
+@mixin inlineblock($valign: middle) {
+  display: inline-block;
+  vertical-align: $valign;
+}
