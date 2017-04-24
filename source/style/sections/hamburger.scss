@@ -3,6 +3,11 @@
   width: 40px;
   float: right;
   margin: 26px 26px 0 0;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: .7;
+  }
 }
 
 .menu__items {
