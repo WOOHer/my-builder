@@ -12,6 +12,11 @@
   width: 31px;
   fill: #fff;
   margin: 0 12px;
+
+  &:hover {
+    fill: #cd8920;
+    transition: 0.5s;
+  }
 }
 
 .header {

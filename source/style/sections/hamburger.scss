@@ -6,8 +6,9 @@
 }
 
 .menu__items {
-  height: 3px;
-  width: 40px;
+  height: 4px;
+  width: 35px;
+  border-radius: 3px;
   background-color: #fff;
   position: relative;
 }
@@ -15,16 +16,18 @@
 .menu__line {
   &_b {
     position: absolute;
-    height: 3px;
-    width: 40px;
+    height: 4px;
+    width: 35px;
+    border-radius: 3px;
     background-color: #fff;
     margin-top: 10px;
   }
 
   &_c {
     position: absolute;
-    height: 3px;
-    width: 40px;
+    height: 4px;
+    width: 35px;
+    border-radius: 3px;
     background-color: #fff;
     margin-top: 10px;
   }

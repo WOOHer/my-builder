@@ -3,7 +3,6 @@
 }
 
 .skill-section {
-  width: 61%;
   padding-bottom: 14px;
 }
 
@@ -17,19 +16,27 @@
 .circle__first {
   fill: none;
   stroke: none;
+  stroke-width: 20px;
 }
 
 .circle__second{
   stroke-width: 20px;
   stroke: $orange;
   fill: transparent;
+  stroke-dasharray: 256.52 314.15;
+}
 
+.circle__html {
+  stroke-width: 20px;
+  stroke: $orange;
+  fill: transparent;
+  stroke-dasharray: 56.52 314.15;
 }
 
 .skill-section__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .skill__name {
@@ -44,4 +51,5 @@
   position: relative;
   @include roboto(medium);
   font-size: 14px;
+  margin-right: 40px;
 }

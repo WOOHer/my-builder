@@ -49,6 +49,9 @@
       </header>
       <div class="about__user"><img class="about__bg-title" src="" alt="">
         <div class="welcome__user user">
+          <svg class="user__title__bg">
+            <use xlink:href="./assets/img/sprite.svg#portfolio_header"></use>
+          </svg>
           <div class="user__pic" style="background-image: url('assets/img/user.jpg');"></div>
           <div class="user__title user__title_less">Олег Братухин</div>
           <div class="user__description">Личный сайт веб-разработчика</div>
@@ -66,7 +69,9 @@
           <use xlink:href="./assets/img/sprite.svg#about_header"></use>
         </svg>
         <div class="about__content"><img class="about__pic" src="assets/img/user-sq.jpg" alt="">
-          <h2 class="about__title subtitle">Кто я</h2>
+          <div class="sub__title">
+            <h2 class="about__title subtitle">Кто я</h2>
+          </div>
           <div class="about__desc">
             <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
             <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</p>
@@ -79,7 +84,9 @@
         </svg>
         <div class="skills">
           <div class="skills__desc">
-            <h2 class="skills__title subtitle">Чем я могу быть вам полезен</h2>
+            <div class="sub__title">
+              <h2 class="subtitle">Чем я могу быть вам полезен</h2>
+            </div>
             <div class="skills__text">
               <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
             </div>
@@ -92,7 +99,8 @@
                       <li class="skills-section__item">
                         <div class="skill">
                           <svg class="skill__circle" height="120" width="120">
-                            <circle cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__first" cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__second" cx="60" cy="60" r="50" transform="rotate(-90 60 60)">HTML5</circle>
                             <div class="skill__name">HTML5</div>
                           </svg>
                         </div>
@@ -100,7 +108,8 @@
                       <li class="skills-section__item">
                         <div class="skill">
                           <svg class="skill__circle" height="120" width="120">
-                            <circle cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__first" cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__second" cx="60" cy="60" r="50" transform="rotate(-90 60 60)">CSS3</circle>
                             <div class="skill__name">CSS3</div>
                           </svg>
                         </div>
@@ -108,7 +117,8 @@
                       <li class="skills-section__item">
                         <div class="skill">
                           <svg class="skill__circle" height="120" width="120">
-                            <circle cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__first" cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__second" cx="60" cy="60" r="50" transform="rotate(-90 60 60)">JavaScript $ JQuery</circle>
                             <div class="skill__name">JavaScript $ JQuery</div>
                           </svg>
                         </div>
@@ -123,7 +133,8 @@
                       <li class="skills-section__item">
                         <div class="skill">
                           <svg class="skill__circle" height="120" width="120">
-                            <circle cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__first" cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__second" cx="60" cy="60" r="50" transform="rotate(-90 60 60)">PHP</circle>
                             <div class="skill__name">PHP</div>
                           </svg>
                         </div>
@@ -131,7 +142,8 @@
                       <li class="skills-section__item">
                         <div class="skill">
                           <svg class="skill__circle" height="120" width="120">
-                            <circle cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__first" cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__second" cx="60" cy="60" r="50" transform="rotate(-90 60 60)">Node.js</circle>
                             <div class="skill__name">Node.js</div>
                           </svg>
                         </div>
@@ -139,8 +151,18 @@
                       <li class="skills-section__item">
                         <div class="skill">
                           <svg class="skill__circle" height="120" width="120">
-                            <circle cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__first" cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__second" cx="60" cy="60" r="50" transform="rotate(-90 60 60)">Angular</circle>
                             <div class="skill__name">Angular</div>
+                          </svg>
+                        </div>
+                      </li>
+                      <li class="skills-section__item">
+                        <div class="skill">
+                          <svg class="skill__circle" height="120" width="120">
+                            <circle class="circle__first" cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__second" cx="60" cy="60" r="50" transform="rotate(-90 60 60)">React</circle>
+                            <div class="skill__name">React</div>
                           </svg>
                         </div>
                       </li>
@@ -154,7 +176,8 @@
                       <li class="skills-section__item">
                         <div class="skill">
                           <svg class="skill__circle" height="120" width="120">
-                            <circle cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__first" cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__second" cx="60" cy="60" r="50" transform="rotate(-90 60 60)">Gulp</circle>
                             <div class="skill__name">Gulp</div>
                           </svg>
                         </div>
@@ -162,7 +185,8 @@
                       <li class="skills-section__item">
                         <div class="skill">
                           <svg class="skill__circle" height="120" width="120">
-                            <circle cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__first" cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__second" cx="60" cy="60" r="50" transform="rotate(-90 60 60)">Bower</circle>
                             <div class="skill__name">Bower</div>
                           </svg>
                         </div>
@@ -170,7 +194,8 @@
                       <li class="skills-section__item">
                         <div class="skill">
                           <svg class="skill__circle" height="120" width="120">
-                            <circle cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__first" cx="60" cy="60" r="50"></circle>
+                            <circle class="circle__second" cx="60" cy="60" r="50" transform="rotate(-90 60 60)">Yarn</circle>
                             <div class="skill__name">Yarn</div>
                           </svg>
                         </div>
@@ -183,7 +208,7 @@
       </div>
     </section>
     <section class="section map">
-      <div class="float-square__map">
+      <div class="float-square">
         <div class="contacts">
           <h2 class="contacts__title"></h2>
           <ul class="contacts__items">

@@ -24,3 +24,13 @@
   bottom: 70px;
   z-index: 1;
 }
+
+.user__title__bg {
+  width: 1170px;
+  height: 313px;
+  fill: $orange;
+  fill-opacity: .1;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
