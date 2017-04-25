@@ -2,5 +2,8 @@
   position: relative;
   height: 900px;
   width: 100%;
-  background: $yellow;
+  background: url('../img/map.jpg') no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
 }

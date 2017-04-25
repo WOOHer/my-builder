@@ -10,9 +10,13 @@ $beige: #ead8b4;
 $blue: #53595d;
 $red: #e44845;
 
+//mixins
+@import 'mixins';
+
 //common
 @import 'common/fonts';
 @import 'common/layout';
+@import 'common/footer';
 
 //sections
 @import 'sections/welcome';
@@ -27,3 +31,4 @@ $red: #e44845;
 @import 'sections/title';
 @import 'sections/hamburger';
 @import 'sections/map';
+@import 'sections/contacts';

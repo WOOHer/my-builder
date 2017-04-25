@@ -88,40 +88,40 @@
 
 @mixin sansus($style : regular) {
   @if $style == regular {
-    font-family: 'sansus_webissimoregular';
+    font-family: 'sansus_webissimoregular', Arial, sans-serif;
   }
 }
 
 @mixin roboto($style : regular) {
   @if $style == regular {
-    font-family: 'robotoregular', sans-serif;
+    font-family: 'robotoregular', Arial, sans-serif;
   }
 
   @if $style == medium-italic {
-    font-family: 'robotomedium_italic', sans-serif;
+    font-family: 'robotomedium_italic', Arial, sans-serif;
   }
 
   @if $style == medium {
-    font-family: 'robotomedium', sans-serif;
+    font-family: 'robotomedium', Arial, sans-serif;
   }
 
   @if $style == light-italic {
-    font-family: 'robotolight_italic', sans-serif;
+    font-family: 'robotolight_italic', Arial, sans-serif;
   }
 
   @if $style == light {
-    font-family: 'robotolight', sans-serif;
+    font-family: 'robotolight', Arial, sans-serif;
   }
 
   @if $style == italic {
-    font-family: 'robotoitalic', sans-serif;
+    font-family: 'robotoitalic', Arial, sans-serif;
   }
 
   @if $style == bold-italic {
-    font-family: 'robotobold_italic', sans-serif;
+    font-family: 'robotobold_italic', Arial, sans-serif;
   }
 
   @if $style == bold {
-    font-family: 'robotobold', sans-serif;
+    font-family: 'robotobold', Arial, sans-serif;
   }
 }

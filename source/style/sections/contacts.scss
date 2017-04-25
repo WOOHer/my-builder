@@ -1,0 +1,26 @@
+.float-square__contacts {
+  padding: 40px;
+  background-color: rgba(#fff, .85);
+  margin-top: -73px;
+}
+
+.contacts__items {
+
+}
+
+.contacts__item {
+  margin: 15px 0;
+  a {
+    color: $gray;
+    @include roboto(medium);
+  }
+}
+
+.footer__contacts a {
+  color: rgba(#ffffff, .5);
+  @include roboto(light);
+}
+
+.footer__right .contacts__item {
+  margin: 0 0 1px 0;
+}

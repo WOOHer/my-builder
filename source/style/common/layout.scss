@@ -2,6 +2,26 @@
   box-sizing: border-box;
 }
 
+html {
+  @include tablets {
+    font-size: 14px;
+  }
+
+  @include phones {
+    height: 300px;
+    font-size: 13px;
+  }
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  @include roboto(regular);
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+}
+
 %clearfix {
   &:after, &:before {
     content: "";
@@ -14,6 +34,10 @@
 }
 
 .wrapper {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+
   &:after {
     content: "";
     display: block;
@@ -21,20 +45,9 @@
   }
 }
 
-.footer {
-  height: $footerh;
-  background: $blue;
-  margin-top: -$footerh;
-}
-
 p {
-  @include roboto(regular);
+  margin: 0;
   color: $gray;
-}
-
-.fa {
-  @include fonta(regular);
-  color: #000;
 }
 
 h1 {
@@ -46,12 +59,18 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-ul, li, a {
-  list-style: none;
+a {
   text-decoration: none;
+}
+
+ul, a {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
   padding: 0;
   margin: 0;
-  color: #fff;
 }
 
 .float-square {
@@ -67,9 +86,7 @@ ul, li, a {
   }
 }
 
-.header, .welcome {
-  background-position: center;
-  background-size: cover;
+.fa {
+  @include fonta(regular);
+  color: #000;
 }
-
-
