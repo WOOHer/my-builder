@@ -28,6 +28,17 @@
     "jquery": "~3.1.1"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "normalize.css": "~5.0.0"
-  }
+  },
+  "description": "> Сборка работает на gulp версии 4.0.",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WOOHer/my-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WOOHer/my-builder/issues"
+  },
+  "homepage": "https://github.com/WOOHer/my-builder#readme"
 }

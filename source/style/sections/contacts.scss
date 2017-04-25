@@ -10,7 +10,8 @@
 
 .contacts__item {
   margin: 15px 0;
-  a {
+  opacity: .8;
+  p {
     color: $gray;
     @include roboto(medium);
   }

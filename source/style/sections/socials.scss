@@ -48,6 +48,13 @@
   width: 50%;
 }
 
-.footer__socials .social__item:hover {
-  opacity: 1;
+.social__item_white {
+  opacity: .5;
+
+  &_vk, &_gh, &_in {
+    &:hover {
+      opacity: 1;
+      fill: #fff;
+    }
+  }
 }
