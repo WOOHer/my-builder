@@ -29,3 +29,9 @@
   @include roboto(medium);
   font-size: 16px;
 }
+
+.float-square .socials {
+  justify-content: center;
+  line-height: 92px;
+  margin-top: 6px;
+}

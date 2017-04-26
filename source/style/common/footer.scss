@@ -6,8 +6,9 @@
   display: flex;
   color: #fff;
 
-  &__left {
-
+  &__link:hover {
+    color: $orange;
+    transition: .5s;
   }
 
   &__middle {
@@ -37,10 +38,6 @@
       top: 50%;
       transform: translateY(-50%);
     }
-  }
-
-  &__right {
-
   }
 
   &__menu {
