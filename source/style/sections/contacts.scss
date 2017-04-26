@@ -4,17 +4,19 @@
   margin-top: -73px;
 }
 
-.contacts__items {
-
+.contacts__link {
+  display: flex;
+  align-items: center;
 }
 
 .contacts__item {
   margin: 15px 0;
   opacity: .8;
-  p {
-    color: $gray;
-    @include roboto(medium);
-  }
+}
+
+.contacts__text {
+  color: $gray;
+  @include roboto(medium);
 }
 
 .footer__contacts a {
@@ -24,4 +26,9 @@
 
 .footer__right .contacts__item {
   margin: 0 0 1px 0;
+}
+
+.fa {
+  color: $orange;
+  font-size: 30px;
 }
