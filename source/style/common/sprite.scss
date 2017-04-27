@@ -16,15 +16,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-5000card_1 {
-  background-image: url(./assets/img/sprite.png);
-  background-position: -2480px 0px;
-  width: 300px;
-  height: 187px;
-}
-.icon-Выгодное предложение2 {
+.icon-1 {
   background-image: url(./assets/img/sprite.png);
   background-position: 0px 0px;
   width: 2480px;
   height: 3508px;
+}
+.icon-2 {
+  background-image: url(./assets/img/sprite.png);
+  background-position: -2480px 0px;
+  width: 300px;
+  height: 187px;
 }
